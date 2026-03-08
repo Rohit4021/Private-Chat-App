@@ -716,7 +716,7 @@ app.post('/register', async (req, res) => {
                         to: email,
                         subject: 'Activation Mail',
                         text: 'Thank you for registering to our website. To activate your account, please open this link :- ' +
-                            `https://netchat-nu.up.railway.app/user?email=${email}`
+                            `https://private-chat-app-idkl.onrender.com/user?email=${email}`
                     }
 
                     transporter.sendMail(mailOptions, function (error, info) {
@@ -1621,3 +1621,4 @@ app.get('/chats/:chat', async (req, res) => {
 app.get('/*', (req, res) => {
     res.render('error')
 })
+
